@@ -7,6 +7,17 @@ speaker = Speaker(GPIO.BCM, 23)
 
 speaker.set_bpm(160)
 
+#intro for speed
+speaker.play('C1', 1/8)
+speaker.pause(1/8)
+speaker.play('C1', 1/8)
+speaker.pause(1/8)
+speaker.play('C1', 1/8)
+speaker.pause(1/8)
+speaker.play('C1', 1/8)
+speaker.pause(1/8)
+
+
 #1-4
 speaker.pause(4)
 

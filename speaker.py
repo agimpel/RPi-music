@@ -81,6 +81,10 @@ class Speaker:
         self.speed = 60/bpm
 
 
+    def set_notepause(self, pause):
+        self.note_pause = pause
+
+
     def play(self, note, duration):
         self.dutycycle = self.note_dc
         self.frequency = self.frequencies[note]
