@@ -91,7 +91,7 @@ class Speaker:
         self.pin.ChangeDutyCycle(self.dutycycle)
         self.pin.ChangeFrequency(self.frequency)
         time.sleep(duration*4*self.speed - self.note_pause)
-        self.pause(self.note_pause)
+        self.pause(self.note_pause/4/self.speed)
 
     
     def pause(self, duration):
